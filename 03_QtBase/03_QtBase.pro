@@ -11,11 +11,15 @@ CONFIG += c++11
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
-    mypushbutton.cpp
+    mypushbutton.cpp \
+    receiver.cpp \
+    sender.cpp
 
 HEADERS += \
     mainwindow.h \
-    mypushbutton.h
+    mypushbutton.h \
+    receiver.h \
+    sender.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
