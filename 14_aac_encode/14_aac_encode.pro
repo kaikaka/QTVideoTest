@@ -9,10 +9,14 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    audiothread.cpp \
+    ffmpegs.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
+    audiothread.h \
+    ffmpegs.h \
     mainwindow.h
 
 FORMS += \
@@ -48,7 +52,7 @@ macx {
             -lavutil \
             -lpostproc \
             -lswscale \
-            -lswresample
+            -lswresample \
 
     QMAKE_INFO_PLIST = /Info.plist
 }

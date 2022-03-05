@@ -39,8 +39,8 @@ win32 {
 
 # mac
 macx {
-    INCLUDEPATH += /usr/local/Cellar/ffmpeg/4.4.1/include
-    LIBS += -L/usr/local/Cellar/ffmpeg/4.4.1/lib \
+    INCLUDEPATH += /usr/local/ffmpeg/include
+    LIBS += -L/usr/local/ffmpeg/lib \
             -lavcodec \
             -lavdevice \
             -lavfilter \
@@ -48,8 +48,7 @@ macx {
             -lavutil \
             -lpostproc \
             -lswscale \
-            -lswresample \
-            -lavresample
+            -lswresample
 
     QMAKE_INFO_PLIST = /Info.plist
 }
