@@ -4,10 +4,10 @@
 #include <QFile>
 
 //这里的yuv是一张图片
-#define FILENAME "/Users/yinxiangkai/Desktop/test/zero.yuv"
+#define FILENAME "/Users/yinxiangkai/Desktop/test/seven_out.yuv"
 #define PIXEL_FORMAT SDL_PIXELFORMAT_IYUV
-#define IMG_W 512
-#define IMG_H 512
+#define IMG_W 1280
+#define IMG_H 720
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
